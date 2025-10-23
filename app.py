@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForTokenClassification, pipelin
 import re
 import gc
 
-MODEL_REPO = "Tetsuo3003/ner-medical-japanese"
+MODEL_REPO = "y-furuya/shinshu-u_20251023"
 
 @st.cache_resource
 def load_pipeline():
@@ -49,3 +49,4 @@ if st.button("解析開始"):
 
         del results
         gc.collect()
+
